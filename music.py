@@ -60,7 +60,7 @@ def load(musicname=""):
     global song, lib
     if musicname == "":
         # initialize
-        lib = ctypes.CDLL(f'{cwd}/easyaudio.so')
+        lib = ctypes.CDLL(f'{cwd}/easyaudio.dll')
         lib.play.argtypes = [ctypes.c_char_p]
         # then exit
         return 0

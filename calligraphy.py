@@ -9,10 +9,7 @@ color = gcolor
 prev = ""
 prevs = ""
 
-try:
-    import pyfiglet
-except Exception as e:
-    perror("pifiglet")
+import pyfiglet
 
 def printl(text):
     global prev, prevs
